@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip A coin</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Open Sans";
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .pad {
+        margin: 10px;
+      }
+      input {
+        font-size: large;
+        background: whitesmoke;
+        padding: 9px;
+        border-radius: 25px;
+        text-align: center;
+      }
+      input:focus {
+        outline: none;
+      }
+      button {
+        border: none;
+        background: cornflowerblue;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 25px;
+      }
+      .error {
+        display: none;
+        width: 400px;
+        background-color: rgb(233, 52, 52);
+        color: white;
+        margin: 0px 0px 10px;
+        text-align: center;
+        font-size: large;
+      }
+      .result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .res {
+        width: 120px;
+        text-align: center;
+        margin: 0 10px;
+        background-color: #fbfbfb;
+      }
+      .mar-0 {
+        margin-bottom: 0;
+      }
+      .mart-0 {
+        margin-top: 0;
+      }
+      .headings {
+        padding: 0.5em 0;
+        margin: 0;
+        background: #ff5722;
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flip a Coin <span style="font-weight: 200">by ares</span></h1>
+    <div class="form">
+      <label>How many times do you want to flip a coin? </label>
+      <div class="pad">
+        <input type="number" required />
+        <button type="submit" onclick="flipacoin();">Let's Flip</button>
+      </div>
+    </div>
+    <div class="error">
+      <p>
+        I have my own limitations. I can only flip coin for 999999 times. Thank
+        You.
+      </p>
+    </div>
+    <div class="result">
+      <div class="heads res">
+        <h3 class="headings">Heads</h3>
+        <h3 class="mar-0" id="heads-number">0</h3>
+        <hr />
+        <h3 class="mart-0">0</h3>
+      </div>
+      <div class="tails res">
+        <h3 class="headings">Tails</h3>
+        <h3 class="mar-0" id="tails-number">0</h3>
+        <hr />
+        <h3 class="mart-0">0</h3>
+      </div>
+      <div class="ratio res">
+        <h3 class="headings">Ratio<span> H/T</span></h3>
+        <h3 class="mar-0" id="headratio">0</h3>
+        <hr />
+        <h3 class="mart-0" id="tailratio">0</h3>
+      </div>
+    </div>
+    <div class="result">
+      <div class="heads res">
+        <h3 class="headings">Heads Won</h3>
+        <h3 class="hw">0</h3>
+      </div>
+      <div class="tails res">
+        <h3 class="headings">Tails Won</h3>
+        <h3 class="tw">0</h3>
+      </div>
+      <div class="res">
+        <h3 class="headings">Times Flip</h3>
+        <h3 class="tf">0</h3>
+      </div>
+    </div>
+    <div class="pad">
+      <button type="reset" onclick="resetbtn()">Reset</button>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
