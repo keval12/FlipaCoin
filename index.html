@@ -72,6 +72,57 @@
         background: #ff5722;
         color: azure;
       }
+
+      @media only screen and (max-width: 320px) {
+        /* For mobile phones: */
+        * {
+          text-align: center;
+        }
+        .res {
+          width: 75px;
+          font-size: ;
+        }
+        button {
+          margin-top: 5px;
+        }
+        .error {
+          width: 100%;
+          padding: 0px 5px;
+        }
+        .mar-0,
+        .mart-0,
+        .bmar {
+          margin: 0;
+        }
+        .headings {
+          font-size: medium;
+        }
+      }
+
+      @media only screen and (max-width: 375px) and (min-width: 321px) {
+        /* For mobile phones: */
+        * {
+          text-align: center;
+        }
+        .res {
+          width: 100px;
+        }
+        button {
+          margin-top: 5px;
+        }
+        .error {
+          width: 100%;
+          padding: 0px 5px;
+        }
+        .mar-0,
+        .mart-0,
+        .bmar {
+          margin: 0;
+        }
+        .headings {
+          font-size: medium;
+        }
+      }
     </style>
   </head>
   <body>
@@ -103,7 +154,7 @@
         <h3 class="mart-0">0</h3>
       </div>
       <div class="ratio res">
-        <h3 class="headings">Ratio<span> H/T</span></h3>
+        <h3 class="headings">H/T %<span></span></h3>
         <h3 class="mar-0" id="headratio">0</h3>
         <hr />
         <h3 class="mart-0" id="tailratio">0</h3>
@@ -112,15 +163,15 @@
     <div class="result">
       <div class="heads res">
         <h3 class="headings">Heads Won</h3>
-        <h3 class="hw">0</h3>
+        <h3 class="hw bmar">0</h3>
       </div>
       <div class="tails res">
         <h3 class="headings">Tails Won</h3>
-        <h3 class="tw">0</h3>
+        <h3 class="tw bmar">0</h3>
       </div>
       <div class="res">
         <h3 class="headings">Times Flip</h3>
-        <h3 class="tf">0</h3>
+        <h3 class="tf bmar">0</h3>
       </div>
     </div>
     <div class="pad">
