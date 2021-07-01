@@ -72,7 +72,17 @@
         background: #ff5722;
         color: azure;
       }
-
+      .contact {
+        font-size: 14px;
+        color: rgb(90, 90, 90);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact p {
+        margin: 1px 0;
+      }
       @media only screen and (max-width: 320px) {
         /* For mobile phones: */
         * {
@@ -80,7 +90,6 @@
         }
         .res {
           width: 75px;
-          font-size: ;
         }
         button {
           margin-top: 5px;
@@ -176,6 +185,10 @@
     </div>
     <div class="pad">
       <button type="reset" onclick="resetbtn()">Reset</button>
+    </div>
+    <div class="contact" onclick="copy();">
+      <p>Created by : Ares softwares</p>
+      <p>Contact us : kevalhpatel12@gmail.com</p>
     </div>
     <script src="js.js"></script>
   </body>
