@@ -1,0 +1,214 @@
+.active {
+  background: #ff5722;
+  color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans";
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  background: cornflowerblue;
+  padding: 10px;
+  margin: 0px 2px;
+  border-radius: 30px;
+  width: 85px;
+  text-align: center;
+}
+header a:hover {
+  background: #ff5722;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pad {
+  margin: 10px;
+}
+input {
+  font-size: large;
+  background: whitesmoke;
+  padding: 9px;
+  border-radius: 25px;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+button {
+  border: none;
+  background: cornflowerblue;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 25px;
+}
+.error {
+  display: none;
+  width: 400px;
+  background-color: rgb(233, 52, 52);
+  color: white;
+  margin: 0px 0px 10px;
+  text-align: center;
+  font-size: large;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.res {
+  width: 120px;
+  text-align: center;
+  margin: 0 10px;
+  background-color: #fbfbfb;
+}
+.mar-0 {
+  margin-bottom: 0;
+}
+.mart-0 {
+  margin-top: 0;
+}
+.headings {
+  padding: 0.5em 0;
+  margin: 0;
+  background: #ff5722;
+  color: azure;
+}
+.features,
+.history {
+  background: cornflowerblue;
+  padding: 15px;
+}
+.history {
+  background: #ff5722;
+  color: #cacaca;
+}
+.features h2,
+.history h2 {
+  padding: 0;
+  margin: 0 0 10px;
+  font-size: xx-large;
+}
+.features p,
+.history p {
+  padding: 0;
+  margin: 0;
+}
+.source {
+  color: #a3a3a3;
+}
+.source a {
+  color: #a3a3a3;
+}
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  * {
+    text-align: center;
+  }
+  .res {
+    width: 75px;
+  }
+  button {
+    margin-top: 5px;
+  }
+  .error {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .mar-0,
+  .mart-0,
+  .bmar {
+    margin: 0;
+  }
+  .headings {
+    font-size: medium;
+  }
+  header ul {
+    width: 90%;
+    margin: 0 auto 10px;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+  /* For mobile phones: */
+  * {
+    text-align: center;
+  }
+  .res {
+    width: 100px;
+  }
+  button {
+    margin-top: 5px;
+  }
+  .error {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .mar-0,
+  .mart-0,
+  .bmar {
+    margin: 0;
+  }
+  .headings {
+    font-size: medium;
+  }
+}
+
+/* CONTACT.HTML */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact div img {
+  margin-right: 10px;
+}
+.contact h1 {
+  font-size: 32px;
+  color: #9c9c9c;
+}
+.contact h2 {
+  font-size: 17px;
+  color: #ababab;
+}
+
+/* ABOUT.HTML */
+
+.about {
+  width: 441px;
+  text-align: center;
+}
+.about h1 {
+  font-size: 40px;
+  margin: 10px;
+}
+.about p {
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 0;
+}
+.create {
+  color: #cccccc;
+  font-size: 13px;
+}
