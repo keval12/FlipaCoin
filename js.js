@@ -4,10 +4,16 @@ var timeflip = 0;
 var heads = 0;
 var tails = 0;
 
+var fea = document.getElementsByClassName("features")[0].clientWidth;
+fea = fea - 30;
+fea = fea.toString();
+fea = fea + "px";
+document.getElementsByClassName("history")[0].style.width = fea;
+
 document.onload = function() {
     headwon = 0;
     tailwon = 0;
-    timeflip = 0;
+    timeflip = 0;  
 };
 
 function flipacoin() {
