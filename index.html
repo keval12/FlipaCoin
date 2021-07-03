@@ -22,136 +22,17 @@
 
   gtag('config', 'UA-201042996-1');
 </script>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-family: "Open Sans";
-      }
-      form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      .pad {
-        margin: 10px;
-      }
-      input {
-        font-size: large;
-        background: whitesmoke;
-        padding: 9px;
-        border-radius: 25px;
-        text-align: center;
-      }
-      input:focus {
-        outline: none;
-      }
-      button {
-        border: none;
-        background: cornflowerblue;
-        padding: 10px 15px;
-        color: white;
-        border-radius: 25px;
-      }
-      .error {
-        display: none;
-        width: 400px;
-        background-color: rgb(233, 52, 52);
-        color: white;
-        margin: 0px 0px 10px;
-        text-align: center;
-        font-size: large;
-      }
-      .result {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .res {
-        width: 120px;
-        text-align: center;
-        margin: 0 10px;
-        background-color: #fbfbfb;
-      }
-      .mar-0 {
-        margin-bottom: 0;
-      }
-      .mart-0 {
-        margin-top: 0;
-      }
-      .headings {
-        padding: 0.5em 0;
-        margin: 0;
-        background: #ff5722;
-        color: azure;
-      }
-      .contact {
-        font-size: 14px;
-        color: rgb(90, 90, 90);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .contact p {
-        margin: 1px 0;
-      }
-      @media only screen and (max-width: 320px) {
-        /* For mobile phones: */
-        * {
-          text-align: center;
-        }
-        .res {
-          width: 75px;
-        }
-        button {
-          margin-top: 5px;
-        }
-        .error {
-          width: 100%;
-          padding: 0px 5px;
-        }
-        .mar-0,
-        .mart-0,
-        .bmar {
-          margin: 0;
-        }
-        .headings {
-          font-size: medium;
-        }
-      }
-
-      @media only screen and (max-width: 375px) and (min-width: 321px) {
-        /* For mobile phones: */
-        * {
-          text-align: center;
-        }
-        .res {
-          width: 100px;
-        }
-        button {
-          margin-top: 5px;
-        }
-        .error {
-          width: 100%;
-          padding: 0px 5px;
-        }
-        .mar-0,
-        .mart-0,
-        .bmar {
-          margin: 0;
-        }
-        .headings {
-          font-size: medium;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Flip a Coin <span style="font-weight: 200">by ares</span></h1>
+    <header>
+      <ul>
+        <a href="index.html" class="active"><li>Home</li></a>
+        <a href="about.html"><li>About Us</li></a>
+        <a href="contact.html"><li>Contact Us</li></a>
+      </ul>
+    </header>
     <div class="form">
       <label>How many times do you want to flip a coin? </label>
       <div class="pad">
@@ -202,9 +83,48 @@
     <div class="pad">
       <button type="reset" onclick="resetbtn()">Reset</button>
     </div>
-    <div class="contact">
-      <p>Created by : Ares softwares</p>
-      <p>Contact us : kevalhpatel12@gmail.com</p>
+
+    <div class="features">
+      <h2>Features and Advantages</h2>
+      <p>Virtual coin flip on your mobile phone.</p>
+      <p>No need of physical coin.</p>
+      <p>Option selector if your ever need to pick an option.</p>
+      <p>Random cpu generated choices.</p>
+      <p>You can flip coin upto 999999 times in just 1 click</p>
+      <p>No lengthy animations just instant result.</p>
+      <p>Keeps track of the flip history.</p>
+      <p>1 click reset.</p>
+      <p>Very Simple to use. Just type in number of flips and flip.</p>
+    </div>
+
+    <div class="history">
+      <h2>History of Flipping Coin</h2>
+      <p>
+        Coin flipping was known to the Romans as navia aut caput ("ship or
+        head"), as some coins had a ship on one side and the head of the emperor
+        on the other.[1] In England, this was referred to as cross and pile.
+      </p>
+      <br />
+      <p>
+        In ancient Rome, the emperor’s word was law, so if a coin landed heads
+        up, you had to respect the will of the emperor and carry out the action
+        decided for that side. In Britain, the practice was called cross and
+        pile, taking its name from the indentation from the hammer used to press
+        the metal as the coin was struck.
+      </p>
+      <br />
+      <p>
+        Ever since than coin flip or toss is widely used in pretty much every
+        sports.
+      </p>
+      <br />
+      <p class="source">
+        Sources.
+        <a
+          href="https://en.wikipedia.org/wiki/Coin_flipping#:~:text=The%20historical%20origin%20of%20coin,to%20as%20cross%20and%20pile."
+          >wikipedia</a
+        >
+      </p>
     </div>
     <script src="js.js"></script>
   </body>
