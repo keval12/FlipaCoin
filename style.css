@@ -168,6 +168,9 @@ button {
   .headings {
     font-size: medium;
   }
+  .about {
+    width: 100%;
+  }
 }
 
 /* CONTACT.HTML */
